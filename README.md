@@ -1,37 +1,33 @@
-# Building an Effective Misogyny Detection Classifier for Low Resource Languages
+# 🛡️ Multilingual Misogyny Detection in Swedish (Low-Resource NLP)
 
-This repository supports ongoing research into detecting hate speech in **Swedish**, a low-resource language, leveraging the power of Transformer models. The project explores the effectiveness of large multilingual models (e.g., mBERT, XLM-R) and various cross-lingual transfer learning techniques compared to monolingual approaches.
+This project explores how multilingual and monolingual Transformer models perform on **Swedish misogyny detection**, a task made challenging by limited annotated data. It compares **zero-shot**, **cross-lingual fine-tuning**, and **few-shot inoculation** strategies using models like **mBERT**, **XLM-R**, and **KB-BERT**.
 
-This work is part of my Computational Linguistics module @ UCL.
+> 📘 Part of my MSc work in Computational Linguistics @ UCL.
 
 ---
 
-### Goals
+## 🎯 Objectives
 
-*   Compare the performance of multilingual vs. monolingual Transformer models on Swedish misogyny detection.
-*   Investigate the effectiveness of different transfer learning strategies:
-    *   Zero-Shot Inference
-    *   Cross-Lingual Fine-tuning (using English, German, Danish datasets)
-    *   Inoculation / Few-Shot Fine-tuning (using minimal Swedish data)
-*   Contribute insights into tackling NLP tasks with limited target-language data.
+- Evaluate the effectiveness of **multilingual vs. monolingual** Transformer models on low-resource hate speech detection  
+- Compare **transfer learning techniques**:
+  - **Zero-Shot Inference**
+  - **Cross-Lingual Fine-Tuning** (using EN, DE, DA)
+  - **Few-Shot (Inoculation)** with minimal Swedish data  
+- Provide practical insights for building NLP systems in **data-scarce language contexts**
 
-### Technologies Used
+---
 
-*   **Core Libraries:** Python, Hugging Face (`transformers`, `datasets`, `evaluate`), PyTorch / TensorFlow
-*   **Models (Examples):** mBERT, XLM-RoBERTa, Swedish BERT variants (KB-BERT etc.)
-*   **Environment:** Google Colaboratory (due to GPU requirements)
+## 🧠 Key Technologies
 
-### Project Status: Work In Progress
+| Category     | Tools/Models Used                                                   |
+|--------------|---------------------------------------------------------------------|
+| Frameworks   | Python, PyTorch, TensorFlow, Hugging Face Transformers & Datasets   |
+| Models       | `mBERT`, `XLM-R`, `KB-BERT`, other Swedish variants                 |
+| Environment  | Google Colab (GPU)                                                  |
 
-This is an **active research project** currently underway, and this repository primarily serves as a placeholder and documentation hub. The code is experimental and subject to frequent updates and refinements as the research progresses towards a corresponding paper.
+---
 
-### Code Access
-
-The primary implementation and experiments are currently conducted within a **Google Colab notebook** due to the computational resources required for training and evaluating Transformer models.
-
-**Access the Colab Notebook Here:** [**https://colab.research.google.com/drive/1MatYWBgW2FLe-u_thPLUvdP9uqgOKxWi?usp=sharing**]
-
-### Project Structure
+## 📂 Project Structure
 
 ```
 .
@@ -44,11 +40,34 @@ The primary implementation and experiments are currently conducted within a **Go
 └── README.md           # This file
 ```
 
-### Planned Future Work 
-
-*   Complete comparative analysis across all planned models and techniques.
-*   Refine evaluation metrics and error analysis.
-*   Finalise the associated research paper/report.
-*   Potentially refactor code into more modular Python scripts (post-research phase).
 
 ---
+
+## 🧪 Current Status
+
+This is an **active research project**, and the repository currently functions as both a codebase and documentation hub.  
+Training and evaluation are done primarily in **Google Colab** for GPU access:
+
+▶️ **[Open Colab Notebook](https://colab.research.google.com/drive/1MatYWBgW2FLe-u_thPLUvdP9uqgOKxWi?usp=sharing)**
+
+---
+
+## 🔍 Planned Improvements
+
+- Complete full comparative analysis across all planned models  
+- Add deeper evaluation (e.g., **error analysis**, confusion matrices, demographic biases)  
+- Refactor code into **modular scripts** post-experiment phase  
+- Finalise MSc report/paper write-up  
+
+---
+
+## 💬 Why This Matters
+
+Building robust hate speech detection systems in **low-resource languages** is essential for global digital safety and fairness. This project aims to identify scalable, ethical solutions using **cross-lingual transfer** and **transformer-based models** to support responsible AI.
+
+---
+
+### 👩‍💻 Author
+**Tatiana Limonova**  
+MSc Language Sciences (Technology of Language and Speech) – UCL  
+[GitHub Profile](https://github.com/kanincityy) • [LinkedIn](https://linkedin.com/in/tatianalimonova)  
